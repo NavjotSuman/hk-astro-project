@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cart - HK Tantra Astrology</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="description" content="Horoscope" />
+	<meta name="keywords" content="Horoscope" />
+	<meta name="author" content="" />
+	<meta name="MobileOptimized" content="320" />
+	<!--start style -->
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+	<!-- favicon links -->
+	<link rel="shortcut icon" type="image/png" href="images/header/NEW Hk FavIcon.png" />
+	<style>
+		/* Extracted styles with custom class names */
+		.pay_modal_classname_fixed {
+		  position: fixed;
+		  inset: 0;
+		  background-color: rgba(0, 0, 0, 0.5);
+		  display: none;
+		  align-items: center;
+		  justify-content: center;
+		  z-index: 9999;
+		}
+		
+		.pay_modal_classname_bg_white {
+		  background-color: white;
+		  border-radius: 0.5rem;
+		  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+		  width: 91.666667%;
+		  padding: 1.5rem;
+		  position: relative;
+		}
+		
+		.pay_modal_classname_md_w_2\/3 {
+		  width: 66.666667%;
+		}
+		
+		.pay_modal_classname_lg_w_1\/2 {
+		  width: 50%;
+		}
+		
+		.pay_modal_classname_p_6 {
+		  padding: 1.5rem;
+		}
+		
+		.pay_modal_classname_relative {
+		  position: relative;
+		}
+		
+		.pay_modal_classname_text_2xl {
+		  font-size: 1.5rem;
+		  line-height: 2rem;
+		}
+		
+		.pay_modal_classname_font_bold {
+		  font-weight: 700;
+		}
+		
+		.pay_modal_classname_text_center {
+		  text-align: center;
+		}
+		
+		.pay_modal_classname_mb_4 {
+		  margin-bottom: 1rem;
+		}
+		
+		.pay_modal_classname_text_gray_600 {
+		  color: #4B5563;
+		}
+		
+		.pay_modal_classname_mb_6 {
+		  margin-bottom: 1.5rem;
+		}
+		
+		.pay_modal_classname_w_full {
+		  width: 100%;
+		}
+		
+		.pay_modal_classname_text_left {
+		  text-align: left;
+		}
+		
+		.pay_modal_classname_border_collapse {
+		  border-collapse: collapse;
+		}
+		
+		.pay_modal_classname_border_b_2 {
+		  border-bottom-width: 2px;
+		}
+		
+		.pay_modal_classname_border_gray_300 {
+		  border-color: #D1D5DB;
+		}
+		
+		.pay_modal_classname_p_2 {
+		  padding: 0.5rem;
+		}
+		
+		.pay_modal_classname_border_b {
+		  border-bottom-width: 1px;
+		}
+		
+		.pay_modal_classname_mt_6 {
+		  margin-top: 1.5rem;
+		}
+		
+		.pay_modal_classname_text_lg {
+		  font-size: 1.125rem;
+		  line-height: 1.75rem;
+		}
+		
+		.pay_modal_classname_font_semibold {
+		  font-weight: 600;
+		}
+		
+		.pay_modal_classname_mt_4 {
+		  margin-top: 1rem;
+		}
+		
+		.pay_modal_classname_absolute {
+		  position: absolute;
+		}
+		
+		.pay_modal_classname_top_2 {
+		  top: 0.5rem;
+		}
+		
+		.pay_modal_classname_right_2 {
+		  right: 0.5rem;
+		}
+		
+		.pay_modal_classname_bg_red_500 {
+		  background-color: #EF4444;
+		}
+		
+		.pay_modal_classname_text_white {
+		  color: white;
+		}
+		
+		.pay_modal_classname_px_3 {
+		  padding-left: 0.75rem;
+		  padding-right: 0.75rem;
+		}
+		
+		.pay_modal_classname_py_1 {
+		  padding-top: 0.25rem;
+		  padding-bottom: 0.25rem;
+		}
+		
+		.pay_modal_classname_rounded {
+		  border-radius: 0.25rem;
+		}
+		
+		.pay_modal_classname_hover\:bg_red_600:hover {
+		  background-color: #DC2626;
+		}
+		</style>
+</head>
+
+<body>
+	<!-- preloader Start -->
+	<div id="preloader">
+		<div id="status"><img src="images/header/horoscope.gif" id="preloader_image" alt="loader">
+		</div>
+	</div>
+
+	<!-- main_header_wrapper Start -->
+	<div class="main_header_wrapper">
+		<div class="hs_navigation_header_wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 d_fl jus_con p_r_0">
+						<div class="d_fl">
+							<div class="hs_header_add_wrapper border_icon">
+								<div class="hs_header_add_icon last">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="hs_header_add_icon_cont">
+									<p>hktantraastrology@gmail.com</p>
+								</div>
+							</div>
+							<div class="hs_header_add_wrapper border_icon hidden-xs p_r_0">
+								<div class="hs_header_add_icon last">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="hs_header_add_icon_cont pad_rt">
+									<p>+91 82644-42266</p>
+								</div>
+							</div>
+						</div>
+						<div class="hs_header_add_wrapper hidden-sm hidden-xs">
+							<div class="hs_header_add_icon">
+								<i class="fa fa-home"></i>
+							</div>
+							<div class="hs_header_add_icon_cont">
+								<p> 553, Azad Nagar, Street No. 2, New Shimlapuri, Ludhiana, 141003 </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7 col-sm-7 col-xs-7">
+						<div class="hs_top_right_wrapper">
+							<ul class="cart_login_wrapper"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hs_header_Wrapper hidden-sm hidden-xs">
+			<div class="container">
+				<div class="hs_top_header_main_Wrapper">
+					<div class="hs_header_logo_left">
+						<div class="hs_logo_wrapper">
+							<a href="index.html"><img src="images/header/logo.png" class="logo img-responsive"
+									alt="logo" title="Logo" /></a>
+						</div>
+					</div>
+					<div class="hs_header_logo_right">
+						<nav class="hs_main_menu">
+							<ul>
+								<li class="dropdown menu-button">
+									<a class="menu-button" href="index.html">Home</a>
+								</li>
+								<li>
+									<a class="menu-button" href="about.html">About Us</a>
+								</li>
+								<li>
+									<a class="menu-button" href="jyotish.html">Jyotish </a>
+								</li>
+								<li class="dropdown menu-button">
+									<a class="menu-button" href="tantra.html">Tantra</a>
+								</li>
+								<li class="dropdown menu-button">
+									<a class="menu-button" href="yantra.html">Yantra</a>
+								</li>
+								<li class="dropdown menu-button">
+									<a class="menu-button" href="sidhi.html">Sidhi </a>
+								</li>
+								<li class="dropdown menu-button">
+									<a class="menu-button" href="shop.html">Shop </a>
+								</li>
+							</ul>
+						</nav>
+						<div class="hs_btn_wrapper hidden-md">
+							<ul>
+								<li><a href="contact.html" class="hs_btn_hover">Appointments</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="mobail_menu visible-sm visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6">
+						<div class="hs_logo">
+							<a href="index.html"><img class="logo" src="images/header/logo.png" alt="Logo"
+									title="Logo"></a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6">
+						<div class="cd-dropdown-wrapper">
+							<a class="house_toggle" href="#0">
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="511.63px"
+									height="511.631px" viewBox="0 0 511.63 511.631"
+									style="enable-background:new 0 0 511.63 511.631;" xml:space="preserve">
+									<g>
+										<g>
+											<path
+												d="M493.356,274.088H18.274c-4.952,0-9.233,1.811-12.851,5.428C1.809,283.129,0,287.417,0,292.362v36.545
+											c0,4.948,1.809,9.236,5.424,12.847c3.621,3.617,7.904,5.432,12.851,5.432h475.082c4.944,0,9.232-1.814,12.85-5.432
+											c3.614-3.61,5.425-7.898,5.425-12.847v-36.545c0-4.945-1.811-9.233-5.425-12.847C502.588,275.895,498.3,274.088,493.356,274.088z" />
+											<path
+												d="M493.356,383.721H18.274c-4.952,0-9.233,1.81-12.851,5.427C1.809,392.762,0,397.046,0,401.994v36.546
+											c0,4.948,1.809,9.232,5.424,12.854c3.621,3.61,7.904,5.421,12.851,5.421h475.082c4.944,0,9.232-1.811,12.85-5.421
+											c3.614-3.621,5.425-7.905,5.425-12.854v-36.546c0-4.948-1.811-9.232-5.425-12.847C502.588,385.53,498.3,383.721,493.356,383.721z" />
+											<path
+												d="M506.206,60.241c-3.617-3.612-7.905-5.424-12.85-5.424H18.274c-4.952,0-9.233,1.812-12.851,5.424
+											C1.809,63.858,0,68.143,0,73.091v36.547c0,4.948,1.809,9.229,5.424,12.847c3.621,3.616,7.904,5.424,12.851,5.424h475.082
+											c4.944,0,9.232-1.809,12.85-5.424c3.614-3.617,5.425-7.898,5.425-12.847V73.091C511.63,68.143,509.82,63.861,506.206,60.241z" />
+											<path
+												d="M493.356,164.456H18.274c-4.952,0-9.233,1.807-12.851,5.424C1.809,173.495,0,177.778,0,182.727v36.547
+											c0,4.947,1.809,9.233,5.424,12.845c3.621,3.617,7.904,5.429,12.851,5.429h475.082c4.944,0,9.232-1.812,12.85-5.429
+											c3.614-3.612,5.425-7.898,5.425-12.845v-36.547c0-4.952-1.811-9.231-5.425-12.847C502.588,166.263,498.3,164.456,493.356,164.456z" />
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+							</a>
+							<nav class="cd-dropdown">
+								<h2 class="greenBG"><a href="index.html">HK Astrology</a></h2>
+								<a href="#0" class="cd-close">Close</a>
+								<ul class="cd-dropdown-content">
+									<li>
+										<a href="index.html">Home</a>
+									</li>
+									<li>
+										<a href="about.html">About Us</a>
+									</li>
+									<li>
+										<a href="jyotish.html">Jyotish </a>
+									</li>
+									<li>
+										<a href="tantra.html">Tantra</a>
+									</li>
+									<li>
+										<a href="yantra.html">Yantra</a>
+									</li>
+									<li>
+										<a href="sidhi.html">Sidhi</a>
+									</li>
+									<li>
+										<a href="shop.html">Shop</a>
+									</li>
+									<li>
+										<a href="contact.html" class="hs_btn_hover">Appointments</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<!-- main_header_wrapper end -->
+	<div class="hs_indx_title_main_wrapper">
+		<div class="hs_title_img_overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 full_width">
+					<div class="hs_indx_title_left_wrapper">
+						<h2>Shop</h2>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  full_width">
+					<div class="hs_indx_title_right_wrapper">
+						<ul>
+							<li><a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;> </li>
+							<li> &nbsp;&nbsp;&nbsp;<a href="shop.html">Shop</a> &nbsp;&nbsp;&nbsp;> </li>
+							<li>Cart</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hs_contact_tittle_main_wrapper">
+		<div class="container">
+			<div class="row jus_con_center">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="hs_about_heading_main_wrapper">
+						<div class="hs_about_heading_wrapper">
+							<h2><span>Your </span>Cart</h2>
+							<h4><span>&nbsp;</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="mrY_60" id="itemsCart"></div>
+				<div id="payBtn" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="d-flex flex-row w-75 align-items-center mt-3 p-2 bg-white rounded">
+						<button class="btn btn-warning w-100 btn-lg ml-2 pay-button" onclick="openUserInfoModal()" id="proceedToPay" type="button">Proceed to Pay</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hs_bottom_footer_main_wrapper bottom-0 postion-absolute">
+		<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="footer_bottom_cont_wrapper text-center">
+						<p>© Copyright 2024 by Harikrishna. All right Reserved - Design By <a href="https://www.vidyacorp.com/">Vidya Corporation</a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="whatsapp">
+		<a title="Message Us" href="https://wa.me/+918264442266">
+			<span class="fa fa-whatsapp"></span>
+		</a>
+	</div>
+
+
+	<!-- pop-up for user info -->
+	<form style="display: none; background-color: #047857; width: 70vw; z-index: 9999; padding: 24px; border-radius: 16px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 28rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; flex-direction: column; gap: 16px;" id="userInfoModal" >
+		<!-- Form Title -->
+		<h2 style="font-size: 1.5rem; font-weight: 600; color: white; text-align: center;">Customer Details</h2>
+	  
+		<!-- Customer Name -->
+		<div>
+		  <label for="customerName" style="display: block; font-size: 0.875rem; font-weight: 500; color: white;">Name</label>
+		  <input 
+			type="text" 
+			id="customerName" 
+			placeholder="Enter your name" 
+			style="margin-top: 4px; display: block; width: 100%; padding: 8px 12px; border: 1px solid #16a34a; border-radius: 8px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #064e3b; color: white; font-size: 0.875rem; outline: none; focus:ring-color: #2dd4bf; focus:border-color: #2dd4bf;"
+			required
+		  />
+		</div>
+	  
+		<!-- Customer Email -->
+		<div>
+		  <label for="customerEmail" style="display: block; font-size: 0.875rem; font-weight: 500; color: white;">Email</label>
+		  <input 
+			type="email" 
+			id="customerEmail" 
+			placeholder="Enter your email" 
+			style="margin-top: 4px; display: block; width: 100%; padding: 8px 12px; border: 1px solid #16a34a; border-radius: 8px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #064e3b; color: white; font-size: 0.875rem; outline: none; focus:ring-color: #2dd4bf; focus:border-color: #2dd4bf;"
+			required
+		  />
+		</div>
+	  
+		<!-- Customer Phone Number -->
+		<div>
+		  <label for="customerPhone" style="display: block; font-size: 0.875rem; font-weight: 500; color: white;">Phone Number</label>
+		  <input 
+			type="tel" 
+			id="customerPhone" 
+			placeholder="Enter your phone number" 
+			style="margin-top: 4px; display: block; width: 100%; padding: 8px 12px; border: 1px solid #16a34a; border-radius: 8px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #064e3b; color: white; font-size: 0.875rem; outline: none; focus:ring-color: #2dd4bf; focus:border-color: #2dd4bf;"
+			required
+		  />
+		</div>
+	  
+		<!-- Customer Address -->
+		<div>
+		  <label for="customerAddress" style="display: block; font-size: 0.875rem; font-weight: 500; color: white;">Address</label>
+		  <textarea 
+			id="customerAddress" 
+			placeholder="Enter your address" 
+			style="margin-top: 4px; display: block; width: 100%; padding: 8px 12px; border: 1px solid #16a34a; border-radius: 8px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #064e3b; color: white; font-size: 0.875rem; outline: none; focus:ring-color: #2dd4bf; focus:border-color: #2dd4bf; height: auto;"
+			rows="3"
+			required
+		  ></textarea>
+		</div>
+	  
+		<!-- Customer Pincode -->
+		<div>
+		  <label for="customerPincode" style="display: block; font-size: 0.875rem; font-weight: 500; color: white;">Pincode</label>
+		  <input 
+			type="text" 
+			id="customerPincode" 
+			placeholder="Enter your pincode" 
+			style="margin-top: 4px; display: block; width: 100%; padding: 8px 12px; border: 1px solid #16a34a; border-radius: 8px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #064e3b; color: white; font-size: 0.875rem; outline: none; focus:ring-color: #2dd4bf; focus:border-color: #2dd4bf;"
+			required
+		  />
+		</div>
+	  
+		<!-- Submit Button -->
+		<div>
+		  <button 
+			type="submit"
+			style="width: 100%; background-color: #14b8a6; color: white; padding: 8px 16px; border-radius: 8px; border: none; font-size: 0.875rem; cursor: pointer; hover:bg-color: #0f766e; outline: none; focus:ring: 2px solid #2dd4bf; focus:ring-offset: 2px;"
+		  >
+			Submit
+		  </button>
+		  <button 
+			type="button" 
+			style="width: 100%; margin-top: 8px; background-color: #ef4444; color: white; padding: 8px 16px; border-radius: 8px; border: none; font-size: 0.875rem; cursor: pointer; hover:bg-color: #b91c1c; outline: none; focus:ring: 2px solid #2dd4bf; focus:ring-offset: 2px;"
+			onclick="userInfoModalClose()"
+		  >
+			Close
+		  </button>
+		</div>
+	  </form>
+	  
+
+	  <!-- pop-up modal -->
+	  <div class="pay_modal_classname_fixed" id="afterPaymentModal">
+		<div class="pay_modal_classname_bg_white pay_modal_classname_md_w_2\/3 pay_modal_classname_lg_w_1\/2 pay_modal_classname_p_6 pay_modal_classname_relative">
+		  <h2 class="pay_modal_classname_text_2xl pay_modal_classname_font_bold pay_modal_classname_text_center pay_modal_classname_mb_4">Navjot Suman</h2>
+		  <p class="pay_modal_classname_text_center pay_modal_classname_text_gray_600 pay_modal_classname_mb_6">Payment Successful! Please take a screenshot of this modal for your records.</p>
+	  
+		  <table class="pay_modal_classname_w_full pay_modal_classname_text_left pay_modal_classname_border_collapse">
+			<thead>
+			  <tr>
+				<th class="pay_modal_classname_border_b_2 pay_modal_classname_border_gray_300 pay_modal_classname_p_2">Item Name</th>
+				<th class="pay_modal_classname_border_b_2 pay_modal_classname_border_gray_300 pay_modal_classname_p_2">Quantity</th>
+				<th class="pay_modal_classname_border_b_2 pay_modal_classname_border_gray_300 pay_modal_classname_p_2">Price</th>
+				<th class="pay_modal_classname_border_b_2 pay_modal_classname_border_gray_300 pay_modal_classname_p_2">Total Price</th>
+			  </tr>
+			</thead>
+			<tbody id="pay_modal_items">
+			  <!-- <tr>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">Sidh Chandra Yantra</td>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">2</td>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">6100</td>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">12200</td>
+			  </tr>
+			  <tr>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">Sidh Surya Yantra</td>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">1</td>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">6100</td>
+				<td class="pay_modal_classname_border_b pay_modal_classname_border_gray_300 pay_modal_classname_p_2">6100</td>
+			  </tr> -->
+			</tbody>
+		  </table>
+	  
+		  <div class="pay_modal_classname_mt_6" id="pay_modal_userInfo">
+			<h3 class="pay_modal_classname_text_lg pay_modal_classname_font_semibold pay_modal_classname_mb_2">Customer Information</h3>
+			<!-- <p><span class="pay_modal_classname_font_semibold">Name:</span> daljit</p>
+			<p><span class="pay_modal_classname_font_semibold">Email:</span> d@d.com</p>
+			<p><span class="pay_modal_classname_font_semibold">Phone Number:</span> 1234567890</p>
+			<p><span class="pay_modal_classname_font_semibold">Address:</span> dummy address</p>
+			<p><span class="pay_modal_classname_font_semibold">Pincode:</span> 123456</p> -->
+		  </div>
+	  
+		  <div class="pay_modal_classname_mt_4" id="pay_modal_orderInfo">
+			<!-- <p><span class="pay_modal_classname_font_semibold">Order ID:</span> order_PbR19zy0sugpFL</p>
+			<p><span class="pay_modal_classname_font_semibold">Total Price:</span> ₹18300</p> -->
+		  </div>
+	  
+		  <button 
+			class="pay_modal_classname_absolute pay_modal_classname_top_2 pay_modal_classname_right_2 pay_modal_classname_bg_red_500 pay_modal_classname_text_white pay_modal_classname_px_3 pay_modal_classname_py_1 pay_modal_classname_rounded pay_modal_classname_hover\:bg_red_600" 
+			onclick="hidePayModal()">
+			Close
+		  </button>
+		</div>
+	  </div>
+	  
+	  
+
+	  
+
+	<!--main js file start-->
+	<script src="js/jquery_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.menu-aim.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<!-- Datepicker js -->
+	<script src="js/datepicker.js"></script>
+	<script src="js/jquery.shuffle.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.inview.min.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/contact_form.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/overLay.js"></script>
+	<script src="js/cart.js"></script>
+	<!--main js file end-->
+	<script src="./js/payment_intigrate.js"></script>
+</body>
+
+</html>
